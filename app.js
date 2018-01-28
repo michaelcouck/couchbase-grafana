@@ -17,7 +17,7 @@ bucket.manager().createPrimaryIndex(function () {
         function (err, result) {
             bucket.get('user:king_arthur', function (err, result) {
                 console.log('Got result: %j', result.value);
-                bucket.query(
+                CouchbaseDatasource.query(
                     N1qlQuery.fromString('SELECT * FROM reaper WHERE $1 in interests LIMIT 1'),
                     ['African Swallows'],
                     function (err, rows) {

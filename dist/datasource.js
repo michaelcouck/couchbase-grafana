@@ -14,6 +14,7 @@ System.register([], function(exports_1) {
                     this.id = instanceSettings.id;
                 }
                 ChangeMyNameDatasource.prototype.query = function (options) {
+                    alert('Options: ' + JSON.stringify(options));
                     throw new Error("Query Support not implemented yet.");
                 };
                 ChangeMyNameDatasource.prototype.annotationQuery = function (options) {

@@ -21,7 +21,7 @@ export class ChangeMyNameQueryCtrl extends QueryCtrl {
   }
 
   getOptions(query) {
-    return this.datasource.metricFindQuery(query || '');
+    return CouchbaseDatasource.metricFindQuery(query || '');
   }
 
   onChangeInternal() {

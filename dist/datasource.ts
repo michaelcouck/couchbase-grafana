@@ -13,6 +13,7 @@ export default class ChangeMyNameDatasource {
   }
 
   query(options) {
+    alert('Options: ' + JSON.stringify(options));
     throw new Error("Query Support not implemented yet.");
   }
 
